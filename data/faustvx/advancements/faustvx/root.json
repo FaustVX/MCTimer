@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:clock"
+        },
+        "title": "FaustVX",
+        "description": "My Advancements",
+        "background": "minecraft:textures/block/dirt.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "location": {
+            "trigger": "minecraft:location"
+        }
+    }
+}
