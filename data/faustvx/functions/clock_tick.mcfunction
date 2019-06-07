@@ -1,4 +1,5 @@
-bossbar set faustvx:clock players @a[advancements={faustvx:faustvx/get_compass=true}]
+scoreboard players enable @a fvx.clock
+bossbar set faustvx:clock players @a[advancements={faustvx:faustvx/get_compass=true},scores={fvx.clock=1}]
 execute store result bossbar faustvx:clock value store result score ClockPlayer fvx.clock run time query daytime
 # if day time
 scoreboard players set IsNight fvx.clock 0
