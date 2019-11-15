@@ -1,8 +1,13 @@
-scoreboard objectives remove fvx.clock
-scoreboard objectives add fvx.clock trigger
-scoreboard players set NightTime fvx.clock 12540
-scoreboard players set IsNight fvx.clock 0
-scoreboard players set @a fvx.clock 1
+scoreboard objectives add mctimer.clock trigger
+scoreboard objectives add mctimer.announce trigger
+scoreboard objectives add mctimer.timer dummy
+
+scoreboard players set NightTimeStart mctimer.timer 12542
+scoreboard players set NightTimeStop mctimer.timer 23460
+scoreboard players set IsNight mctimer.timer 0
+
+scoreboard players set @a mctimer.clock 1
+scoreboard players set @a mctimer.announce 1
 
 # bossbar to display the time
 bossbar add faustvx:clock " Day |Night"
